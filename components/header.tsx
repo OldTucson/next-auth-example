@@ -26,7 +26,7 @@ export default function Header() {
                 You are not signed in
               </span>
               <a
-                // href={`/api/auth/signin`}
+                href={`/api/auth/signin`}
                 className={styles.buttonPrimary}
                 onClick={async (e) => {
                   e.preventDefault();
