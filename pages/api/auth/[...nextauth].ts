@@ -6,13 +6,13 @@ import TwitterProvider from "next-auth/providers/twitter";
 import Auth0Provider from "next-auth/providers/auth0";
 import { PrismaAdapter } from "@auth/prisma-adapter";
 import { PrismaClient } from "@prisma/client";
+import prisma from "../../../lib/prisma";
 // import AppleProvider from "next-auth/providers/apple"
 // import EmailProvider from "next-auth/providers/email"
 
 // For more information on each option (and a full list of options) go to
 // https://next-auth.js.org/configuration/options
 
-const prisma = new PrismaClient();
 export const authOptions: NextAuthOptions = {
   //@ts-ignore
   adapter: PrismaAdapter(prisma),
