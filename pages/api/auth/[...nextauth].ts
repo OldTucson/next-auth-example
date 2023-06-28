@@ -45,10 +45,10 @@ export const authOptions: NextAuthOptions = {
       from: process.env.EMAIL_FROM,
       //maxAge: 24 * 60 * 60, // 设置邮箱链接失效时间，默认24小时
     }),
-    // GithubProvider({
-    //   clientId: process.env.GITHUB_ID,
-    //   clientSecret: process.env.GITHUB_SECRET,
-    // }),
+    GithubProvider({
+      clientId: process.env.GITHUB_ID,
+      clientSecret: process.env.GITHUB_SECRET,
+    }),
     // GoogleProvider({
     //   clientId: process.env.GOOGLE_ID,
     //   clientSecret: process.env.GOOGLE_SECRET,
