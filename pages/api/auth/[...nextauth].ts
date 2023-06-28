@@ -55,16 +55,7 @@ export const authOptions: NextAuthOptions = {
     //   clientSecret: process.env.AUTH0_SECRET,
     //   issuer: process.env.AUTH0_ISSUER,
     // }),
-  ],
-  theme: {
-    colorScheme: "light",
-  },
-  callbacks: {
-    async jwt({ token }) {
-      token.userRole = "admin";
-      return token;
-    },
-  },
+  ]
 };
 
 export default NextAuth(authOptions);
