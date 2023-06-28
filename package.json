@@ -11,6 +11,9 @@
     "build": "next build",
     "start": "next start"
   },
+  "scripts" {
+    "postinstall": "prisma generate"
+  },
   "author": "Iain Collins <me@iaincollins.com>",
   "contributors": [
     "Balázs Orbán <info@balazsorban.com>",
